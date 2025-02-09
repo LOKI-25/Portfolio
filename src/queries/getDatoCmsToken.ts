@@ -6,7 +6,7 @@ export const getDatoCmsToken = (): string => {
   switch (hostname) {
     case 'localhost':
       return '36f5d415afdc52c14c3f229f8e660c';
-    case 'portfolionetflix.vercel.app':
+    case 'portfolio-five-henna-63.vercel.app':
       return '36f5d415afdc52c14c3f229f8e660c';
 
     default:
