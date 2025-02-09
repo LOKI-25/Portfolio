@@ -1,0 +1,59 @@
+.netflix-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #141414;
+  overflow: hidden;
+}
+
+/* Typing effect */
+.typing-effect {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #DB202C;
+  border-right: 3px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  animation: blink 1s step-end infinite;
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Netflix logo */
+.netflix-logo {
+  width: 500px;
+  height: auto;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeIn 0.5s forwards ease-in;
+}
+
+/* Animation for first click */
+.animate.netflix-logo {
+  animation: zoomOut 3s forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0%, 80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
