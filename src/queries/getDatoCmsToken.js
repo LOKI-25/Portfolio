@@ -1,6 +1,6 @@
 // getDatoCmsToken.ts
 
-export const getDatoCmsToken = (): string => {
+export const getDatoCmsToken = ()=> {
   const hostname = window.location.hostname;
 
   // Check if hostname is 'localhost' or ends with 'vercel.app'

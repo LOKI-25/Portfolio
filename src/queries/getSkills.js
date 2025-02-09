@@ -1,6 +1,5 @@
 // queries/getTimeline.ts
 import datoCMSClient from './datoCMSClient';
-import { Skill } from '../types';
 
 const GET_SKILLS = `
 
@@ -15,7 +14,7 @@ const GET_SKILLS = `
 }
 `;
 
-export async function getSkills(): Promise<Skill[]> {
-  const data = await datoCMSClient.request<{ allskill: Skill[] }>(GET_SKILLS);
+export async function getSkills() {
+  const data = await datoCMSClient.request(GET_SKILLS);
   return data.allskill.skills.skills;
 }
