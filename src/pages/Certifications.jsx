@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './Certifications.css';
-import { FaExternalLinkAlt, FaUniversity } from 'react-icons/fa';
-import { SiUdemy, SiCoursera, SiIeee } from 'react-icons/si';
+import { FaExternalLinkAlt, FaGoogle, FaUniversity } from 'react-icons/fa';
+import { SiUdemy, SiCoursera, SiIeee, SiCodechef, SiCisco } from 'react-icons/si';
 import { getCertifications } from '../queries/getCertifications';
 const iconData = {
   'udemy': <SiUdemy />,
   'coursera': <SiCoursera />,
   'ieee': <SiIeee />,
-  'university': <FaUniversity />
+  'university': <FaUniversity />,
+  'google': <FaGoogle />,
+  'codechef':<SiCodechef />,
+  'cisco':<SiCisco />
+
 }
 
 const Certifications = () => {
